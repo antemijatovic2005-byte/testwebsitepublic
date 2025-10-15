@@ -279,6 +279,81 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.05);
 }
 
+.map-section {
+  margin-top: 5rem;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1 1 45%;
+  background-color: #1b1e22;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  min-height: 450px;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-left h3,
+.contact-right h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  color: #d0d0d0;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.socials {
+  margin: 1.5rem 0;
+}
+
+.socials a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #3fa9ff;
+}
+
+.contact-right iframe {
+  border-radius: 10px;
+  width: 100%;
+}
+.contact-right .contact-content {
+  width: 100%;
+  max-width: none; /* laat de map breder gaan */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* =======================
    RESPONSIVE
 ======================= */
