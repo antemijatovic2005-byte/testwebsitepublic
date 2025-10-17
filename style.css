@@ -208,17 +208,17 @@ section {
 ======================= */
 
 .contact-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
   justify-content: center;
   align-items: stretch;
   gap: 2rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
 }
 
 .contact-left,
 .contact-right {
-  flex: 1 1 45%;
+  /* width handled by grid */
   background-color: #1b1e22;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
@@ -230,6 +230,24 @@ section {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+}
+
+/* Maak de rechter kolom volledig breed en laat de map de kaart vullen */
+.contact-right {
+  display: flex;
+}
+
+.contact-right .contact-content {
+  max-width: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right .contact-content iframe {
+  flex: 1 1 auto;
+  height: auto; /* overschrijft het vaste HTML height-attribuut */
+  min-height: 0;
 }
 
 .contact-left h3,
@@ -377,12 +395,11 @@ footer {
 
   /* CONTACT */
   .contact-wrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
   .contact-left, .contact-right {
-    flex: 1 1 100%;
     min-height: unset;
     padding: 1.5rem;
   }
