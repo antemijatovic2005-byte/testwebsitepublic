@@ -82,6 +82,8 @@ img {
   color: #1e90ff;
 }
 
+
+
 /* Hamburger standaard verbergen (desktop) */
 .menu-toggle {
   display: none;
@@ -203,6 +205,17 @@ section {
   box-shadow: 0 6px 25px rgba(30,144,255,0.3);
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(30,144,255,0.3);
+}
+
 /* =======================
    CONTACT
 ======================= */
@@ -287,6 +300,178 @@ section {
 }
 
 /* =======================
+   PAKKET PAGINA'S
+======================= */
+
+.pakket-hero {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    ),
+    url('afbeeldingen/1.png') center/cover no-repeat;
+}
+
+.pakket-image {
+  width: 300px;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.pakket-details {
+  background-color: #111317;
+  padding: 4rem 2rem;
+  padding-top: 6rem; /* Extra ruimte onder navbar */
+}
+
+.pakket-details .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pakket-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+  align-items: start;
+}
+
+/* Desktop: zorg dat info-cards rechts netjes onder elkaar staan */
+@media (min-width: 769px) {
+  .pakket-content {
+    align-items: start;
+  }
+}
+
+.pakket-description h3 {
+  color: #1e90ff;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.3rem;
+}
+
+.pakket-description h3:first-child {
+  margin-top: 0;
+}
+
+.pakket-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.pakket-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #d0d0d0;
+}
+
+.pakket-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.pakket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Desktop: behoud verticale layout voor info-cards */
+@media (min-width: 769px) {
+  .pakket-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.info-card {
+  background: #1b1e22;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(30, 144, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(30,144,255,0.2);
+}
+
+.info-card h4 {
+  color: #1e90ff;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* =======================
+   VIDEO SECTION
+======================= */
+
+.video-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.video-section h3 {
+  color: #1e90ff;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.cta-section {
+  background-color: #0b0c10;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  margin-bottom: 2rem;
+  color: #d0d0d0;
+}
+
+/* =======================
    FOOTER
 ======================= */
 
@@ -356,6 +541,8 @@ footer {
     color: #fff;
   }
 
+
+
   .menu-toggle.active .bar:nth-child(2) { opacity: 0; }
   .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -421,6 +608,38 @@ footer {
 
   p {
     font-size: 0.95rem;
+  }
+
+  /* PAKKET PAGINA'S MOBIEL */
+  .pakket-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pakket-image {
+    width: 250px;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+
+  .pakket-details {
+    padding: 3rem 1rem;
+    padding-top: 5rem; /* Extra ruimte onder navbar op mobiel */
+  }
+
+  .cta-section {
+    padding: 3rem 1rem;
+  }
+
+  /* VIDEO MOBILE */
+  .video-container iframe {
+    height: 250px;
+  }
+
+  .video-section h3 {
+    font-size: 1.2rem;
   }
 }
 
