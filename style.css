@@ -61,6 +61,15 @@ img {
   width: auto;
 }
 
+.logo-section a {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.logo-section a:hover {
+  opacity: 0.8;
+}
+
 .navbar nav ul {
   list-style: none;
   display: flex;
@@ -299,6 +308,18 @@ section {
   color: #3fa9ff;
 }
 
+/* Contact links styling - alleen voor email en telefoon links */
+.contact-content p a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-content p a:hover {
+  color: #3fa9ff;
+  text-decoration: underline;
+}
+
 /* =======================
    PAKKET PAGINA'S
 ======================= */
@@ -334,10 +355,16 @@ section {
 
 .pakket-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
   margin-top: 2rem;
   align-items: start;
+}
+
+.pakket-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Desktop: zorg dat info-cards rechts netjes onder elkaar staan */
