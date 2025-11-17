@@ -231,14 +231,48 @@ section {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: none;
-  background: rgba(23, 28, 39, 0.95);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: radial-gradient(circle at 30% 30%, rgba(30,144,255,0.35), rgba(16,18,26,0.95));
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.35) 50%, transparent 70%);
+  opacity: 0;
+  transform: skewX(-20deg);
+  transition: opacity 0.3s ease;
+  animation: button-sheen 3s linear infinite;
+}
+
+@keyframes button-sheen {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.45;
+  }
+  60% {
+    transform: translateX(150%) skewX(-20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(150%) skewX(-20deg);
+    opacity: 0;
+  }
 }
 
 .package-btn:focus-visible,
@@ -249,7 +283,8 @@ section {
 
 .package-btn:hover:not(:disabled) {
   background: #1e90ff;
-  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-2px) scale(1.05);
 }
 
 .package-btn:disabled {
