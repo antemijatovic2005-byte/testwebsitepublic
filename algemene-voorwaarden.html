@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algemene voorwaarden | TDetailing Antwerpen</title>
+  <meta name="description" content="Algemene voorwaarden van TDetailing voor detailingdiensten in Antwerpen." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="legal-page">
+<header class="navbar">
+  <div class="container">
+    <div class="logo-section">
+      <a href="index.html">
+        <img src="afbeeldingen/2.png" alt="TDetailing Logo" class="navbar-logo">
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#overons">Over ons</a></li>
+        <li><a href="index.html#werkwijze">Pakketen</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <h1>Algemene voorwaarden</h1>
+  <p>Onderstaande bepalingen regelen het minimaal vereiste contractuele kader voor onze detailingdiensten.</p>
+</section>
+
+<main class="legal-wrapper">
+  <article class="legal-card">
+    <h2>1. Identiteit</h2>
+    <p>TDetailing, gevestigd te Scheirlinckxstraat 56, 2660 Antwerpen, België. Contact: <a href="mailto:info@tdetailing.be">info@tdetailing.be</a>, <a href="tel:+32471555156">+32 471 55 51 56</a>.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>2. Toepassing</h2>
+    <p>Deze voorwaarden gelden voor elke offerte, afspraak en factuur van TDetailing. Afwijken kan enkel schriftelijk.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>3. Afspraken en uitvoering</h2>
+    <ul>
+      <li>De klant levert correcte informatie over de staat van het voertuig.</li>
+      <li>Voertuigen worden vóór aflevering leeggehaald zodat de behandeling veilig kan gebeuren.</li>
+      <li>TDetailing levert de dienst volgens de omschrijving van het gekozen pakket.</li>
+    </ul>
+  </article>
+
+  <article class="legal-card">
+    <h2>4. Prijzen en betalingen</h2>
+    <p>Alle prijzen zijn in euro en inclusief btw tenzij anders vermeld. Betaling gebeurt onmiddellijk bij afhaling, contant of via de vooraf afgesproken betaalmethode. Bij laattijdige betaling is van rechtswege en zonder ingebrekestelling een verwijlinterest verschuldigd volgens de Belgische wet van 2 augustus 2002.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>5. Aansprakelijkheid</h2>
+    <p>TDetailing behandelt elk voertuig met zorg. Onze aansprakelijkheid is beperkt tot de directe schade die aantoonbaar te wijten is aan onze fout en maximaal tot het factuurbedrag van de geleverde dienst. Indirecte schade en gevolgschade zijn uitgesloten.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>6. Klachten</h2>
+    <p>Klachten over zichtbare tekortkomingen moeten binnen 24 uur na afhaling schriftelijk gemeld worden via info@tdetailing.be met foto’s. Bij gegronde klachten zoeken we samen naar een passende oplossing.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>7. Toepasselijk recht</h2>
+    <p>Op alle overeenkomsten is het Belgisch recht van toepassing. Geschillen vallen onder de exclusieve bevoegdheid van de rechtbanken van het arrondissement Antwerpen.</p>
+  </article>
+
+  <p class="legal-meta">Laatste update: November 2025</p>
+</main>
+
+<footer>
+  © <span id="year"></span> TDetailing. Alle rechten voorbehouden.
+  <div class="footer-links">
+    <a href="privacy.html">Privacyverklaring</a>
+    <span class="divider">|</span>
+    <a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
+

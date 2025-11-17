@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacyverklaring | TDetailing Antwerpen</title>
+  <meta name="description" content="Privacyverklaring van TDetailing, Scheirlinckxstraat 56, 2660 Antwerpen." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="legal-page">
+<header class="navbar">
+  <div class="container">
+    <div class="logo-section">
+      <a href="index.html">
+        <img src="afbeeldingen/2.png" alt="TDetailing Logo" class="navbar-logo">
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#overons">Over ons</a></li>
+        <li><a href="index.html#werkwijze">Pakketen</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <h1>Privacyverklaring</h1>
+  <p>Deze verklaring beschrijft minimaal welke persoonsgegevens TDetailing verwerkt en hoe we jouw rechten respecteren.</p>
+</section>
+
+<main class="legal-wrapper">
+  <article class="legal-card">
+    <h2>Verwerkingsverantwoordelijke</h2>
+    <p>TDetailing, Scheirlinckxstraat 56, 2660 Antwerpen, België. Contact: <a href="mailto:info@tdetailing.be">info@tdetailing.be</a> of <a href="tel:+32471555156">+32 471 55 51 56</a>.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>Welke persoonsgegevens</h2>
+    <ul>
+      <li>Identificatiegegevens (naam, kenteken indien relevant).</li>
+      <li>Contactgegevens (telefoon, e-mail, adres).</li>
+      <li>Facturatiegegevens voor uitgevoerde diensten.</li>
+      <li>Communicatie-inhoud die je ons toestuurt.</li>
+    </ul>
+  </article>
+
+  <article class="legal-card">
+    <h2>Doeleinden en rechtsgrond</h2>
+    <p>Wij verwerken je gegevens uitsluitend om afspraken te plannen, diensten uit te voeren, facturatie te verzorgen en je op jouw verzoek te contacteren. De verwerking steunt op contractuele noodzaak of op jouw expliciete toestemming wanneer je ons vrijwillig gegevens bezorgt.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>Bewaartermijnen</h2>
+    <p>Gegevens die wettelijk moeten worden bewaard (facturen, werkfiches) bewaren we maximaal 7 jaar. Andere communicatie verwijderen we zodra jouw vraag afgehandeld is, tenzij je klant blijft.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>Ontvangers</h2>
+    <p>Wij delen geen persoonsgegevens met derden tenzij dit wettelijk vereist is (bv. boekhouder of overheid) of strikt nodig is om de dienst uit te voeren. Met eventuele verwerkers sluiten we passende overeenkomsten.</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>Jouw rechten</h2>
+    <p>Je hebt recht op inzage, correctie, beperking, overdraagbaarheid en verwijdering van jouw persoonsgegevens, evenals het recht om bezwaar te maken tegen gebruik voor direct marketing. Je kan deze rechten uitoefenen via <a href="mailto:info@tdetailing.be">info@tdetailing.be</a>. Klachten kan je indienen bij de Gegevensbeschermingsautoriteit (www.gegevensbeschermingsautoriteit.be).</p>
+  </article>
+
+  <article class="legal-card">
+    <h2>Contact</h2>
+    <p>Vragen over privacy worden behandeld door TDetailing via info@tdetailing.be. We actualiseren deze verklaring wanneer regelgeving dat vereist.</p>
+  </article>
+
+  <p class="legal-meta">Laatste update: November 2025</p>
+</main>
+
+<footer>
+  © <span id="year"></span> TDetailing. Alle rechten voorbehouden.
+  <div class="footer-links">
+    <a href="privacy.html">Privacyverklaring</a>
+    <span class="divider">|</span>
+    <a href="algemene-voorwaarden.html">Algemene voorwaarden</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
+
