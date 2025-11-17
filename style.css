@@ -337,6 +337,35 @@ section {
   border: 1px solid rgba(255,255,255,0.05);
 }
 
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+
+.card-content p {
+  color: #cfd3dd;
+  font-size: 0.95rem;
+  margin: 0 auto;
+  max-width: 260px;
+}
+
+.package-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(30,144,255,0.15);
+  border: 1px solid rgba(30,144,255,0.5);
+  color: #ffffff;
+  white-space: nowrap;
+  display: inline-flex;
+  margin-top: 0.85rem;
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 25px rgba(30,144,255,0.3);
