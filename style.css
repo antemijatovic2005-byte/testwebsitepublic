@@ -701,6 +701,8 @@ footer {
 
   .package-slider {
     overflow: hidden;
+    touch-action: pan-y; /* Cruciaal: staat horizontaal swipen direct toe */
+    user-select: none;   /* Voorkomt dat je tekst selecteert tijdens swipen */
   }
 
   .package-track .card-link {
