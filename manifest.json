@@ -1,0 +1,24 @@
+{
+  "name": "TDetailing Antwerpen - Auto Detailen",
+  "short_name": "TDetailing",
+  "description": "Professioneel auto detailen in Antwerpen. Car detailing, lakcorrectie en interieurreiniging aan Osystraat 7.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c10",
+  "theme_color": "#1e90ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "afbeeldingen/2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "afbeeldingen/2.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "category": "automotive",
+  "lang": "nl-BE"
+}
