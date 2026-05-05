@@ -324,6 +324,15 @@
     menuToggle.classList.toggle('active');
   });
 
+  // Close mobile menu when clicking on menu items
+  const menuLinks = document.querySelectorAll('.nav-menu a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+
   const packageTrack = document.querySelector('.package-track');
   const packageCards = packageTrack ? Array.from(packageTrack.children) : [];
   const prevPackageBtn = document.querySelector('.package-btn.prev');
