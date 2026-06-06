@@ -30,7 +30,15 @@
   gtag('js', new Date());
   gtag('config', 'AW-18098606009');
 </script>
-  
+
+<script>
+  if (window.location.hostname === 'www.tdetailing.be') {
+    window.location.replace(
+      window.location.href.replace('//www.tdetailing.be', '//tdetailing.be')
+    );
+  }
+</script>
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://tdetailing.be" />
